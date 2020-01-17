@@ -1,4 +1,8 @@
 <p>artist-reg works!</p>
+
+<div style="text-align: center;">
+<h1>{{message}}</h1>
+  </div>
 <form>
     <div class="container">
         <fieldset>
@@ -13,7 +17,7 @@
             </div>
             <div class="form-group">
               <label for="Password">Password</label>
-              <input type="password" class="form-control" [(ngModel)="artist.artistPassword"   name="artistPassword" placeholder="Password">
+              <input type="password" class="form-control" [(ngModel)]="artist.artistPassword"   name="artistPassword" placeholder="Password">
             </div>
       
             <div class="form-group">
@@ -71,7 +75,7 @@
 
           <fieldset class="form-group">
               <label for="Experience">Experience</label>
-              <input type="range" min="1" max="100" value="50" class="custom-range" [(ngModel)]="artist.artistExperience" name="artistExperience" id="customRange1">
+              <input type="range" min="1" max="10" value="5" class="custom-range" [(ngModel)]="artist.artistExperience" name="artistExperience" id="customRange1">
           </fieldset>
           <div class="form-group">
               <label for="Address">Address</label>
@@ -101,7 +105,7 @@
           </div>
 
       
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" (click)="registerNow()">Submit</button>
         </fieldset>
       </div>
       

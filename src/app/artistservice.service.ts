@@ -10,6 +10,6 @@ export class ArtistserviceService {
 
   public registerArtist(artist)
   {
-      return this.http
+      return this.http.post("http://localhost:9090/artistslist",artist);
   }
 }

@@ -1,19 +1,19 @@
 export class Artist{
 
     constructor(
-        artistname:string,
-        artistemail:string,
-        artistpassword:string,
-        artistphone:number,
-        artistgenre:string,
-        artistavailibity:string,
+        artistName:string,
+        artistEmailID:string,
+        artistPassword:string,
+        artistPhoneNumber:number,
+        artistGenre:string,
+        artistAvailDays:string,
         artistfees:number,
-        artistcertificate:string,
-        artistexperience:number,
-        artistaddress:string,
-        artistdob:string,
-        artisthours:number,
-        artistProfile:string
+        artistCertification:string,
+        artistExperience:number,
+        artistAddress:string,
+        artistDob:string,
+        prefWorkHours:number,
+        artistPicture:string
 
 
     ){
