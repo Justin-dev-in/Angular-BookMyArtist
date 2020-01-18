@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { ArtistserviceService } from './artistservice.service';
 import {HttpClientModule} from '@angular/common/http';
+import { ArtistloginComponent } from './artistlogin/artistlogin.component';
 
 
 
@@ -25,6 +26,7 @@ import {HttpClientModule} from '@angular/common/http';
     FooterComponent,
     NavbarComponent,
     LoginComponent,
+    ArtistloginComponent,
     
   ],
   imports: [

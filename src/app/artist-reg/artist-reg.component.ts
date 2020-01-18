@@ -24,4 +24,6 @@ message:any;
       res.subscribe((data)=>this.message=data);
   }
 
+  
+
 }

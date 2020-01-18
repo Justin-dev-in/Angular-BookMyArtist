@@ -1,3 +1,8 @@
+<div>
+
+  <h1>{{message}}</h1>
+</div>
+
 <div class="modal" id="mylogin" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -8,12 +13,12 @@
             <button type="button" data-dismiss="modal" class="close">&times;</button>
           </div>
           <div class="modal-body">
-            <form class="text-center" action="#">
+            <form class="text-center" method="post" (ngSubmit)="loginNow()">
               <div class="form-group">
-                  <input type="email" style="border-style:solid;" class="form-control" placeholder="E-mail">
+                  <input type="email" name="artistEmailID" [(ngModel)]="artistEmailID" style="border-style:solid;" class="form-control" placeholder="E-mail">
               </div>
               <div class="form-group"> 
-                  <input type="password" style="border-style: solid;" class="form-control" placeholder="Password">
+                  <input type="password" name="artistPassword" [(ngModel)]="artistPassword" style="border-style: solid;" class="form-control" placeholder="Password">
               </div>
                 <div class="d-flex justify-content-around">
                   <div>
@@ -30,8 +35,8 @@
               </div>
           
               <!--  login button -->
-              <button class="btn btn-danger btn-block my-2" type="submit">Login</button>
-          
+              <button type="submit" class="btn btn-danger btn-block my-2"  >Login</button>
+            </form>
               <!-- Register -->
               <p>Not a member?
                   <a href="#">Register</a>
@@ -45,7 +50,7 @@
               <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in login-icon"></i></a>
               <a href="#" class="mx-2" role="button"><i class="fab fa-github login-icon"></i></a>
           
-          </form>
+          
           <!-- Default form login -->
           </div>
           </div>
