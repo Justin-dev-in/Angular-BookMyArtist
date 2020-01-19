@@ -1,0 +1,17 @@
+.footer-link{
+    text-decoration: none;
+    color:gray;
+}
+.footer-link:hover{
+    text-decoration: none;
+    color:darkgrey;
+}
+/* footer contact */
+.contact{
+    color: gray;
+}
+
+/* login pop login-icon */
+.login-icon{
+    color:hsl(0, 80%, 50%);
+}

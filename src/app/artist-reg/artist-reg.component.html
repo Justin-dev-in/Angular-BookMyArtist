@@ -1,0 +1,114 @@
+<p>artist-reg works!</p>
+
+<div style="text-align: center;">
+<h1>{{message}}</h1>
+  </div>
+<form>
+    <div class="container">
+        <fieldset>
+              <legend>Artist Registration</legend>
+              <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" [(ngModel)]="artist.artistName" name="artistName"  placeholder="Enter name">
+              </div>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input type="email" class="form-control"  [(ngModel)]="artist.artistEmailID"  name="artistEmailID" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="Password">Password</label>
+              <input type="password" class="form-control" [(ngModel)]="artist.artistPassword"   name="artistPassword" placeholder="Password">
+            </div>
+      
+            <div class="form-group">
+              <label for="Confirm Password">Confirm Password</label>
+              <input type="password" class="form-control"   name="cartistpassword" placeholder="Confirm Password">
+            </div>
+            <div class="form-group">
+              <label for="Phone">Phone</label>
+              <input type="number" class="form-control" [(ngModel)]="artist.artistPhoneNumber"  name="artistPhoneNumber" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="Genre">Genre</label>
+              <select class="form-control" [(ngModel)]="artist.artistGenre" name="artistGenre">
+                  <option selected>Select Genre</option>
+                  <option value="Band">Band</option>
+                  <option value="Comedian">Comedian</option>
+                  <option value="Drummer">Drummer</option>
+                  <option value="Singer">Singer</option>
+                  <option value="Dj">DJ</option>
+                  <option value="Other">Other</option>
+            
+              </select>
+            </div>
+          
+          <div class="form-group">
+              <label for="Available On" >Available On</label>
+        
+                 <div class="checkbox">
+                   <div class="row" id="days">
+              
+                     <p><input type="checkbox" id="larger" [(ngModel)]="artist.artistAvailDays" name="artistAvailDays" value="Monday">Mon&emsp;</p> 
+                     <p><input type="checkbox" id="larger" [(ngModel)]="artist.artistAvailDays" name="artistAvailDays" value="Tuesday">Tue&emsp;</p>
+                     <p><input type="checkbox" id="larger" [(ngModel)]="artist.artistAvailDays" name="artistAvailDays" value="Wednesday">Wed&emsp;</p>
+                     <p><input type="checkbox" id="larger" [(ngModel)]="artist.artistAvailDays" name="artistAvailDays" value="Thursday">Thurs&emsp;</p>
+                     <p><input type="checkbox" id="larger" [(ngModel)]="artist.artistAvailDays" name="artistAvailDays" value="Friday">Fri&emsp;</p>
+                     <p><input type="checkbox" id="larger" [(ngModel)]="artist.artistAvailDays" name="artistAvailDays" value="Saturday">Sat&emsp;</p>
+                     <p><input type="checkbox" id="larger" [(ngModel)]="artist.artistAvailDays" name="artistAvailDays" value="Sunday">Sun&emsp;</p>
+            
+                   </div>
+                 </div>
+          </div>
+
+      
+      
+
+          <div class="form-group">
+               <label for="Fees">Fees</label>
+               <input type="number" class="form-control" [(ngModel)]="artist.artistfees"  name="artistfees" >
+          </div>
+
+          <div class="form-group">
+              <label  for="Certifications">Certifications</label>
+              <textarea class="form-control" [(ngModel)]="artist.artistCertification" name="artistCertification" rows="3"></textarea>
+          </div>
+
+          <fieldset class="form-group">
+              <label for="Experience">Experience</label>
+              <input type="range" min="1" max="10" value="5" class="custom-range" [(ngModel)]="artist.artistExperience" name="artistExperience" id="customRange1">
+          </fieldset>
+          <div class="form-group">
+              <label for="Address">Address</label>
+              <textarea class="form-control" [(ngModel)]="artist.artistAddress" name="artistAddress" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+             <label for="DOB">DOB</label>
+             <input type="date" class="form-control" [(ngModel)]="artist.artistDob"  name="artistDob" placeholder="Password">
+    
+          </div>
+
+          <div class="form-group">
+            <label for="Working Hours">Working Hours</label>
+            <select class="form-control" [(ngModel)]="artist.prefWorkHours" name="prefWorkHours">
+                <option selected>No of hours</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+          
+            </select>
+          </div>
+          <div class="form-group">
+              <label for="Pictures">Pictures</label>
+              <input type="file" class="form-control-file" [(ngModel)]="artist.artistPicture" name="artistPicture" aria-describedby="fileHelp">
+              <small id="fileHelp" class="form-text text-muted">Attach your pictures</small>
+          </div>
+
+      
+          <button type="submit" class="btn btn-primary" (click)="registerNow()">Submit</button>
+        </fieldset>
+      </div>
+      
+      
+      
+  </form>

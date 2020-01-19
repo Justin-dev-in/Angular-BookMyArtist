@@ -1,0 +1,74 @@
+.main {
+    margin: 5px auto;
+}
+/* Bootstrap 4 text input with search icon */
+
+.form-control {
+    padding-left: 2.375rem; 
+    border: none;
+    margin-right: 20px;
+
+}
+
+/* fevicon search-icon  */
+
+.form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: red;
+}
+/* search-icon hover  */
+.form-control-feedback:hover{
+
+    background-color: red;
+    color:white;
+}
+/* navbar logo  */
+.logo {
+    color:red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* navbar login button */
+.btn-login {
+    background-color: white;
+    border:gray;
+    border-style: solid;
+    color:gray;
+    margin-right:5px ;
+}
+ /* navbar cart-icon  */
+ .cart-icon{
+     padding-top: 5px;
+     margin: 25px;
+ }
+ /* navbar cart icon */
+ .category-txt{
+     font-weight: lighter;
+     font-family: sans-serif;
+     margin-right: 30px;
+
+} 
+
+/* footer link  */
+.footer-link{
+    text-decoration: none;
+    color:gray;
+}
+.footer-link:hover{
+    text-decoration: none;
+    color:darkgrey;
+}
+/* footer contact */
+.contact{
+    color: gray;
+}
+
+/* login pop login-icon */
+.login-icon{
+    color:hsl(0, 80%, 50%);
+}
