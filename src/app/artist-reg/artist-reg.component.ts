@@ -15,6 +15,8 @@ message:any;
   constructor(private service:ArtistserviceService) { }
 
   ngOnInit() {
+  
+   
   }
 
 
@@ -24,6 +26,6 @@ message:any;
       res.subscribe((data)=>this.message=data);
   }
 
-  
+
 
 }

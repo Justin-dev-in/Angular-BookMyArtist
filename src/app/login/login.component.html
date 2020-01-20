@@ -1,58 +1,54 @@
-<div>
-
-  <h1>{{message}}</h1>
-</div>
-
+  
 <div class="modal" id="mylogin" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h6 class="text-center text-black" style="font-family:Helvetica, sans-serif; font-weight: bold;">
-              Login In to your bookMyAtrist Account!
-            </h6>
-            <button type="button" data-dismiss="modal" class="close">&times;</button>
-          </div>
-          <div class="modal-body">
-            <form class="text-center" method="post" (ngSubmit)="loginNow()">
-              <div class="form-group">
-                  <input type="email" name="artistEmailID" [(ngModel)]="artistEmailID" style="border-style:solid;" class="form-control" placeholder="E-mail">
-              </div>
-              <div class="form-group"> 
-                  <input type="password" name="artistPassword" [(ngModel)]="artistPassword" style="border-style: solid;" class="form-control" placeholder="Password">
-              </div>
-                <div class="d-flex justify-content-around">
-                  <div>
-                    <!-- remember me -->
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                      <label class="custom-control-label" for="defaultUnchecked">Remember me</label>
-                  </div>
-                  </div>
-                <div >
-                      <!-- Forgot password -->
-                      <a href="#">Forgot password?</a>
-                  </div>
-              </div>
-          
-              <!--  login button -->
-              <button type="submit" class="btn btn-danger btn-block my-2"  >Login</button>
-            </form>
-              <!-- Register -->
-              <p>Not a member?
-                  <a href="#">Register</a>
-              </p>
-          
-              <!-- Social login -->
-              <p>or sign in with:</p>
-          
-              <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f login-icon "></i></a>
-              <a href="#" class="mx-2" role="button"><i class="fab fa-twitter login-icon"></i></a>
-              <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in login-icon"></i></a>
-              <a href="#" class="mx-2" role="button"><i class="fab fa-github login-icon"></i></a>
-          
-          
-          <!-- Default form login -->
-          </div>
-          </div>
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="text-center text-black" style="font-family:Helvetica, sans-serif; font-weight: bold;">
+            Login In to your bookMyAtrist Account!
+          </h6>
+          <button type="button" data-dismiss="modal" class="close">&times;</button>
         </div>
-    </div>
+        <div class="modal-body">
+          <form class="text-center" action="#">
+            <div class="form-group">
+                <input type="email" style="border-style:solid;" [(ngModel)]="artist.artistEmail" name="artistEmail" class="form-control" placeholder="E-mail">
+            </div>
+            <div class="form-group"> 
+                <input type="password" style="border-style: solid;"[(ngModel)]="artist.artistPassword" name="artistPassword" class="form-control" placeholder="Password">
+            </div>
+              <div class="d-flex justify-content-around">
+                <div>
+                  <!-- remember me -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                    <label class="custom-control-label" for="defaultUnchecked">Remember me</label>
+                </div>
+                </div>
+              <div >
+                    <!-- Forgot password -->
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+        
+            <!--  login button -->
+           <button class="btn btn-danger btn-block my-2" type="submit" (click)="loginNow()"> Login</button>
+        
+            <!-- Register -->
+            <p>Not a member?
+                <a href="#">Register</a>
+            </p>
+        
+            <!-- Social login -->
+            <p>or sign in with:</p>
+        
+            <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f login-icon "></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-twitter login-icon"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in login-icon"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-github login-icon"></i></a>
+        
+        </form>
+        <!-- Default form login -->
+        </div>
+        </div>
+      </div>
+  </div>
